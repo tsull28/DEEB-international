@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | DEEB International</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html#top">
+        <img src="DEEBlogo.png" alt="DEEBロゴ">
+      </a>
+    </div>
+
+    <div class="menu-toggle" id="hamburger">☰</div>
+
+    <nav id="main-nav">
+      <ul>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="fighters.html">FIGHTERS</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="contact-title">《CONTACT》</h1>
+
+    <section class="contact-page">
+      <p class="contact-lead">以下のフォームに必要事項をご記入ください。</p>
+
+      <form class="contact-form" action="#" method="post" novalidate>
+        
+        <div class="form-row">
+          <label for="name">氏名</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">メールアドレス</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="message">お問い合わせ内容</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn-submit" onclick="location.href='mail-complete.html'">送信</button>
+        </div>
+      </form>
+
+      <p class="contact-alt">※お急ぎの方は <a href="mailto:deeb-ni-kikunyade@deeb.com?subject=&body=">こちら</a> まで。</p>
+    </section>
+  </main>
+
+  <footer>
+    <ul class="footer-links">
+      <li><a href="privacy.html">個人情報保護方針</a></li>
+      <li><a href="terms.html">ご利用規約</a></li>
+      <li><a href="company.html">会社概要</a></li>
+    </ul>
+    <small>© 2025 DEEB International. All Rights Reserved.</small>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+     const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+
+      toggle.addEventListener('click', () => {
+       nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      });
+    });
+  </script>
+
+  <script>
+   const toggle = document.querySelector('.menu-toggle');
+   const nav = document.querySelector('nav');
+
+   toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+   });
+  </script>
+
+</body>
+</html>

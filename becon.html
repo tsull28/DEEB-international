@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ドナルド・ベーコン - DEEB</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+        <div class="logo">
+            <a href="index.html#top">
+                <img src="DEEBlogo.png" alt="DEEBロゴ">
+            </a>
+        </div>
+
+        <div class="menu-toggle" id="hamburger">☰</div> 
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="fighters.html">FIGHTERS</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+  </header>
+
+  <main>
+    <section class="fighter-detail">
+
+      <!-- 大きな画像 -->
+      <img src="becon.png" alt="ベーコン">
+
+      <!-- ① 名前 -->
+      <h1>ドナルド・ベーコン（37）</h1>
+
+      <!-- ② リングネーム -->
+      <h2 class="ring-name">"King of Bacon"</h2>
+
+      <!-- ③ 経歴 -->
+      <ul class="career">
+        <li>2020年世界満腹プンプン王者</li>
+        <li>WBG（World Bakatare Goigoisu）王者</li>
+        <li>第5回GPB（Grand Prix of Butasan）優勝</li>
+        <li>勝脂身の美学2018総合優</li>
+      </ul>
+
+      <!-- ④ エピソード／詳細 -->
+      <div class="bio">
+        <p>
+          アメリカ・アイオワ州出身。
+          <br>父は養豚場の経営者、母はベーコンの品評会チャンピオンという“肉に愛された家系”で育つ。生まれた時から常にスモーキーな香りを漂わせていたという伝説を持ち、体重10キロで産声とともに焼きベーコンを握っていたと語られる（本人談）。
+          <br><br>学生時代はアメリカンフットボールで活躍。
+          <br>だが、あまりにベーコンを食べ過ぎてヘルメットが肉の蒸気で割れたため、スポーツ医学的な理由で引退。その後は、全米中のフードファイト大会を荒らし回り、“食って倒す”スタイルを確立。とある大会では、ステーキ5kg完食直後にそのまま対戦相手にダイビングボディプレスをキメて両方の勝利賞金を総取りしたという逸話も。
+          <br><br>本格的に格闘技に転向してからは、巨体から繰り出される「スモークボム・タックル」が代名詞。
+          <br>これは助走ゼロでも壁を破壊すると言われ、一度だけ試合中にリングの床ごと落下したこともある。対戦相手からは「彼と戦うと燻製される気分になる」と恐れられている。
+          <br><br>DEEB参戦に際し、「肉の厚みは信念の厚みだ」という名言を残し、重量級の象徴としてファンの支持を集めている。リングの外でも豪快で、自宅の庭で“全自動ベーコン製造機”を自作しており、そこからいつも湯気が上がっているとかいないとか。
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+
+    <ul class="footer-links">
+      <li><a href="privacy.html">個人情報保護方針</a></li>
+      <li><a href="terms.html">ご利用規約</a></li>
+      <li><a href="company.html">会社概要</a></li>
+    </ul>
+
+    <small>© 2025 DEEB International. All Rights Reserved.</small>
+    
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+     const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+
+      toggle.addEventListener('click', () => {
+       nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      });
+    });
+  </script>
+
+  <script>
+   const toggle = document.querySelector('.menu-toggle');
+   const nav = document.querySelector('nav');
+
+   toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+   });
+  </script>
+
+
+</body>
+</html>
