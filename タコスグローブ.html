@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>タコスグローブ - DEEB</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+        <div class="logo">
+            <a href="index.html#top">
+                <img src="DEEBロゴ.png" alt="DEEBロゴ">
+            </a>
+        </div>
+
+        <div class="menu-toggle" id="hamburger">☰</div> 
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="fighters.html">FIGHTERS</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+  </header>
+
+  <main>
+    <section class="shop-detail">
+
+      <img src="タコスグローブ.png" alt="グローブ">
+
+      <h1>タコスグローブ</h1>
+      <h2 class="price">¥12,000</h2>
+
+      <div class="bio">
+        <p>
+          炎の男・ブランドン・タコスが放つ、世界一ユルくて熱いグローブクッションがついに登場！
+          <br>この愛くるしいビジュアル、どこかで見たことあるような…ないような…でもインパクトは抜群！
+
+          <br><br>表情ひとつで語るその眼差しは、「君、タコス食べた？」と問いかけてくるような圧。
+          <br>今にもしゃべり出しそうな雰囲気なのに、実際は黙ってあなたの手を優しく包み込んでくれる不思議な存在。
+
+          <br><br>手にすっぽり収まるミニサイズながら、内部にはタコス屋直伝の“スパイシーソウル”が宿っているとかいないとか（※イメージです）。
+          リングの控え室では、ファイターの手を温め、
+          リビングでは、あなたの心を熱く癒す…
+          <br>その使い方は、あなた次第！
+
+          <br><br>こんな人におすすめ：
+          <br>・手を温めたいけど、普通のカイロじゃ物足りない
+          <br>・会議中、こっそり握りしめて気合いを入れたい
+          <br>・タコスに人生を救われたことがある
+
+          <br><br>デスクに置けば職場の話題独占、
+          リングに持ち込めば、勝利の味がする!（※気のせい）。
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+
+    <ul class="footer-links">
+      <li><a href="privacy.html">個人情報保護方針</a></li>
+      <li><a href="terms.html">ご利用規約</a></li>
+      <li><a href="company.html">会社概要</a></li>
+    </ul>
+
+    <small>© 2025 DEEB International. All Rights Reserved.</small>
+    
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+     const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+
+      toggle.addEventListener('click', () => {
+       nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      });
+    });
+  </script>
+
+  <script>
+   const toggle = document.querySelector('.menu-toggle');
+   const nav = document.querySelector('nav');
+
+   toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+   });
+  </script>
+
+
+</body>
+</html>

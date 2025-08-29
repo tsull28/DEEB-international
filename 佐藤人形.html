@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ハイカロリー佐藤人形 - DEEB</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+        <div class="logo">
+            <a href="index.html#top">
+                <img src="DEEBロゴ.png" alt="DEEBロゴ">
+            </a>
+        </div>
+
+        <div class="menu-toggle" id="hamburger">☰</div> 
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="fighters.html">FIGHTERS</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+  </header>
+
+  <main>
+    <section class="shop-detail">
+
+      <img src="佐藤人形.png" alt="人形">
+
+      <h1>ハイカロリー佐藤人形</h1>
+      <h2 class="price">¥12,500</h2>
+
+      <div class="bio">
+        <p>
+          濃厚カロリーの渦から現れし、伝説のファイター「ハイカロリー佐藤」が、まさかの手のひらサイズで降臨！
+          <br>見た目はふてぶてしいのに、なぜか愛嬌たっぷり。
+          <br>この人形、ただの飾りではありません。<br>あなたのデスクに置くだけで、「カロリー」が空気中に満ちあふれ、謎のエネルギーが湧いてくるという都市伝説まで…。
+          <br>足元の台座には、燃えさかる炎とともに「HIGH CALORIE SATO」の名が堂々と刻まれ、見る者すべての胃袋を刺激！
+          <br>まるでラーメン替え玉3杯目のような満足感と、食後に押し寄せる罪悪感を再現（※あくまでイメージです）。
+          <br><br>なぜか会社の会議で結果を出せそうな気がする…
+          <br>なぜか筋トレの回数が増える気がする…
+          <br>なぜか夜食を我慢できなくなる…
+          <br><br>そんな謎の副作用も報告されていますが、それもご愛嬌。
+          <br>今日からあなたも、"カロリーの申し子"と一緒に、燃え上がる毎日を過ごしていこう！
+
+        </p>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer>
+
+    <ul class="footer-links">
+      <li><a href="privacy.html">個人情報保護方針</a></li>
+      <li><a href="terms.html">ご利用規約</a></li>
+      <li><a href="company.html">会社概要</a></li>
+    </ul>
+
+    <small>© 2025 DEEB International. All Rights Reserved.</small>
+    
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+     const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+
+      toggle.addEventListener('click', () => {
+       nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      });
+    });
+  </script>
+
+  <script>
+   const toggle = document.querySelector('.menu-toggle');
+   const nav = document.querySelector('nav');
+
+   toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+   });
+  </script>
+
+
+</body>
+</html>

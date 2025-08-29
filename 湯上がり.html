@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>湯上がりボロネーゼ - DEEB</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+        <div class="logo">
+            <a href="index.html#top">
+                <img src="DEEBロゴ.png" alt="DEEBロゴ">
+            </a>
+        </div>
+
+        <div class="menu-toggle" id="hamburger">☰</div> 
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="fighters.html">FIGHTERS</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+  </header>
+
+  <main>
+    <section class="shop-detail">
+
+      <img src="パスタ入浴剤.png" alt="入浴剤">
+
+      <h1>湯上がりボロネーゼ</h1>
+      <h2 class="price">¥10,000</h2>
+
+      <div class="bio">
+        <p>
+            「熱く茹でて、勝利をつかめ！」
+            <br>イタリア最強の重量級ファイター、ルイ・パスタ監修。
+            <br>肉体を極限まで煮込むために開発された、禁断の入浴アイテムがついに解禁！
+
+            <br><br>バスタブに投入した瞬間、真っ赤なトマトと濃厚ミートの香りが浴室中に広がり、そこはもう“ボロネーゼ地獄”。
+            <br>あなたの身体が、勝利を求めて煮えたぎる「アルデンテボディ」へと変貌する…<br>（※効果には個人差があります）
+
+            <br><br>戦いに疲れたあなたへ、食欲と癒しのダブルパンチ！
+            <br>香りで整い、汗でデトックス、そして何より湯上がりの肌が“パスタソース級にツヤツヤ”と噂されるとかされないとか…。
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+
+    <ul class="footer-links">
+      <li><a href="privacy.html">個人情報保護方針</a></li>
+      <li><a href="terms.html">ご利用規約</a></li>
+      <li><a href="company.html">会社概要</a></li>
+    </ul>
+
+    <small>© 2025 DEEB International. All Rights Reserved.</small>
+    
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+     const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+
+      toggle.addEventListener('click', () => {
+       nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      });
+    });
+  </script>
+
+  <script>
+   const toggle = document.querySelector('.menu-toggle');
+   const nav = document.querySelector('nav');
+
+   toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+   });
+  </script>
+
+
+</body>
+</html>

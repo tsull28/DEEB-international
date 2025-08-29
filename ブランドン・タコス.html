@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ブランドン・タコス - DEEB</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+        <div class="logo">
+            <a href="index.html#top">
+                <img src="DEEBロゴ.png" alt="DEEBロゴ">
+            </a>
+        </div>
+
+        <div class="menu-toggle" id="hamburger">☰</div> 
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="fighters.html">FIGHTERS</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+  </header>
+
+  <main>
+    <section class="fighter-detail">
+
+      <!-- 大きな画像 -->
+      <img src="タコス.png" alt="タコス">
+
+      <!-- ① 名前 -->
+      <h1>ブランドン・タコス(28)</h1>
+
+      <!-- ② リングネーム -->
+      <h2 class="ring-name">"灼熱のスパイシーボム"</h2>
+
+      <!-- ③ 経歴 -->
+      <ul class="career">
+        <li>一口がデカい選手権 メキシコ王者</li>
+        <li>第5回GPBY（Grand Prix of Bibiriyanen）メキシコ王者</li>
+        <li>炎のマカロニタワー運搬競技大会 inローマ 優勝</li>
+        
+      </ul>
+
+      <!-- ④ エピソード／詳細 -->
+      <div class="bio">
+        <p>
+          メキシコ出身、情熱と辛味でできた男、ブランドン・タコス。
+          <br>身長178cm・体重120kg。ぽっちゃり体型とは思えない俊敏な動きと、爆発的な一撃で観客を沸かせる“灼熱の格闘家”。
+
+          <br><br>実家は代々続くタコス屋「Tacos del Diablo」。
+          <br>小さい頃からハバネロ入りタコスを主食とし、中学時代には校内早食い大会で9年連続優勝。
+          <br>その異常な耐辛性から「胃袋が鋼」と噂されるように。
+
+          <br><br>そんな彼が格闘技を始めたのは、高校でタコスの早食い中にいちゃもんをつけてきた相手をビンタ一発で吹っ飛ばした事件がきっかけ。
+          「自分には“味”だけじゃなく“力”もある」ことに気づいた彼は、その日から練習の傍ら、毎日30個のタコスと3リットルのメキシカンコーラを欠かさず摂取。
+
+          <br><br>現在の必殺技は、突進しながらのスピンパンチ「トルティーヤ・ブラスター」。
+          <br>試合前には必ず「今日の相手の分までタコスを食った」と言って登場する。
+
+          <br>かつて、ある大会で「辛いものが苦手な外国人選手」に試合前タコスを差し入れし、その相手が試合前にリタイアした伝説も持つ。
+
+          <br><br> リングの上では陽気でありながら、
+          いざ戦えば一気に沸騰。
+          <br>DEEB史上もっとも“燃える男”──ブランドン・タコス。
+          <br>その一撃は、胃袋の奥からやってくる。
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+
+    <ul class="footer-links">
+      <li><a href="privacy.html">個人情報保護方針</a></li>
+      <li><a href="terms.html">ご利用規約</a></li>
+      <li><a href="company.html">会社概要</a></li>
+    </ul>
+
+    <small>© 2025 DEEB International. All Rights Reserved.</small>
+    
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+     const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+
+      toggle.addEventListener('click', () => {
+       nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      });
+    });
+  </script>
+
+  <script>
+   const toggle = document.querySelector('.menu-toggle');
+   const nav = document.querySelector('nav');
+
+   toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+   });
+  </script>
+
+
+</body>
+</html>

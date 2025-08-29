@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ルイ・パスタ - DEEB</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+        <div class="logo">
+            <a href="index.html#top">
+                <img src="DEEBロゴ.png" alt="DEEBロゴ">
+            </a>
+        </div>
+
+        <div class="menu-toggle" id="hamburger">☰</div> 
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="fighters.html">FIGHTERS</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+  </header>
+
+  <main>
+    <section class="fighter-detail">
+
+      <!-- 大きな画像 -->
+      <img src="ルイパスタ.png" alt="ルイパスタ">
+
+      <!-- ① 名前 -->
+      <h1>ルイ・パスタ（34）</h1>
+
+      <!-- ② リングネーム -->
+      <h2 class="ring-name">"ナポリの弾丸ボロネーゼ"</h2>
+
+      <!-- ③ 経歴 -->
+      <ul class="career">
+        <li>イタリア発・世界バター早食い選手権王</li>
+        <li>WWC（World Wakiga Championship）王者</li>
+        <li>第8回鼻垂れ小僧模写大会 4位</li>
+        
+      </ul>
+
+      <!-- ④ エピソード／詳細 -->
+      <div class="bio">
+        <p>
+          イタリア・ナポリ出身。実家は3代続く老舗パスタ屋。
+          <br>厨房ではなくなぜか地下室で育てられ、パスタソースの香りと重低音ビートに包まれながら格闘技に目覚める。幼少期より「ソースより濃い男になれ」という祖父の謎の教えを胸に、毎朝リング代わりのパスタこね台でスパーリングを敢行。
+          <br><br>20代で地元の地下格闘技大会「Sugo Fight League」に出場。
+          <br>初試合では開始10秒で相手を“アルデンテスリーパー”で昇天させ一躍有名に。その後、地元マフィアの食客兼用心棒としてスカウトされるが、「リング以外では暴れない」と断って逆にボスに自作のカルボナーラをふるまい許されるという伝説も。
+          <br><br>技の名前も独特で、主力技は「ラザニア・ドロップ」。
+          <br>3段重ねのボディプレスで、まるで層状の重圧が押し寄せると評判。試合前には必ず自家製トマトソースを胸に塗ることでテンションを爆上げしている（本人いわく「パワーソース」）。
+          <br>入場テーマはもちろん陽気なアコーディオンに乗せた「マンマ・ミーア・ファイターズ」。
+          <br><br>DEEB参戦にあたり、「肉と炭水化物の融合こそ、究極の強さだ」と語り、今や団体の名物選手に。試合後には自作のパスタをふるまう“食えるファイター”として、グッズも飛ぶように売れる人気ぶり。
+          <br><br>彼の夢は、「世界王者になったら実家のパスタ屋を改装してジムにする」こと。
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+
+    <ul class="footer-links">
+      <li><a href="privacy.html">個人情報保護方針</a></li>
+      <li><a href="terms.html">ご利用規約</a></li>
+      <li><a href="company.html">会社概要</a></li>
+    </ul>
+
+    <small>© 2025 DEEB International. All Rights Reserved.</small>
+    
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+     const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+
+      toggle.addEventListener('click', () => {
+       nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      });
+    });
+  </script>
+
+  <script>
+   const toggle = document.querySelector('.menu-toggle');
+   const nav = document.querySelector('nav');
+
+   toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+   });
+  </script>
+
+
+</body>
+</html>

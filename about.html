@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>About DEEB International</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html#top"><img src="DEEBロゴ.png" alt="DEEBロゴ"></a>
+    </div>
+
+    <div class="menu-toggle" id="hamburger">☰</div> 
+
+    <nav id="main-nav">
+      <ul>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="fighters.html">FIGHTERS</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="contact.html">CONTACXT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-content">
+    <h3>《ABOUT》</h3>
+
+    <h1 class="about-title">なぜ“DEEB”という名前になったのか？</h1>
+    <p class="about-text">
+      DEEB。<br>それは「Deep」でも「Beef」でもない、<strong>“DEEB”</strong>。語源は単純明快。<br>
+      「デブ（DEBU）」という言葉を、あえて“かっこよく”変換し直した造語。<br>
+      肥満体型が忌避されるこの社会に一石を投じ、「<strong>重さは強さだ</strong>」という新たな価値観を提示する。
+      <br>それが我々DEEBの始まりである。
+      <br><br><strong>(注)実在する国内格闘技団体DEEPとは、一切関係ありません。</strong>
+    </p>
+
+    <h2 class="about-subtitle">どういう想いで大会を開催しようと思ったか？</h2>
+    <p class="about-text">
+      世界には、肉体を極限まで削ぎ落としたアスリートが溢れている。<br>
+      だが我々は、<strong>「肉をつけた強者」</strong>にもスポットライトを当てたかった。<br>
+      カロリーに正面から向き合い、脂肪の盾で己を守り、<br>
+      重さで相手を制する。
+      <br><br>
+      そんな"<strong>真のヘビー級</strong>"による戦いがあってもいいじゃないか──。<br>
+      この時代にこそ必要な、「大きさ」と「迫力」を持った新たな戦いの形。<br>
+      それがDEEBの原点である。
+    </p>
+
+    <h2 class="about-subtitle">なぜ重量級にこだわるのか？</h2>
+    <p class="about-text">
+      脂肪。それは飽食の象徴であり、同時に自己を貫いてきた証。<br>
+      食欲に忠実であること、そしてそれを自信に変えること。<br>
+      DEEBは、ただの重量級ではない。<br>
+      それぞれが「自分の肉体」と向き合い、「誇りある重さ」を背負ってリングに立つ。
+      <br><br>
+      そこには、笑いも涙も、カロリーも──すべてが詰まっている。
+      <br>
+      だからこそ我々は、重量級にこだわり続ける。
+    </p>
+  </main>
+
+  <footer>
+    <ul class="footer-links">
+      <li><a href="privacy.html">個人情報保護方針</a></li>
+      <li><a href="terms.html">ご利用規約</a></li>
+      <li><a href="company.html">会社概要</a></li>
+    </ul>
+
+    <small>© 2025 DEEB International. All Rights Reserved.</small>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+     const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+
+      toggle.addEventListener('click', () => {
+       nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      });
+    });
+  </script>
+
+  <script>
+   const toggle = document.querySelector('.menu-toggle');
+   const nav = document.querySelector('nav');
+
+   toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+   });
+  </script>
+
+
+  
+
+</body>
+</html>
