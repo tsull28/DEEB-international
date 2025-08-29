@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>個別情報保護方針</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ヘッダー（index.htmlと同じもの） -->
+  <header>
+    <div class="logo">
+      <a href="index.html#top"><img src="DEEBlogo.png" alt="DEEBロゴ"></a>
+    </div>
+
+    <div class="menu-toggle" id="hamburger">☰</div> 
+
+    <nav id="main-nav">
+      <ul>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="fighters.html">FIGHTERS</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About本文 -->
+  <main class="main-content">
+    <section class="privacy-policy">
+        <h2>《個人情報保護方針》</h2>
+
+        <h3>1. 個人情報の取得について</h3>
+        <p>
+         当団体は、必要最小限の範囲で適正かつ公正な手段により、個人情報を取得します。
+         <br>例えば、イベント申込やグッズ購入時などに入力された情報は、明確な目的の範囲内でのみ利用されます（…その日の気分次第）。
+        </p>
+
+        <h3>2. 利用目的について</h3>
+        <p>
+           取得した個人情報は、以下の目的のみに全力で利用します：
+            <br><br>・イベントやサービスの告知という名の"ささやかなラブレター"をお届けするため
+            <br>・お問い合わせに対して、ブロンド美女（※脳内イメージ）による秒速レスポンスであなたの心を救済するため
+            <br>・サービス改善のために、夜な夜なスタッフが眠い目をこすりながら統計と向き合うため
+            <br><br>これ以外の目的では、本人の同意なく利用しません。
+            <br>勝手に知らないマルチ商法や謎の仮想通貨の広告メールが届くこともありませんので、ご安心ください。
+            <br>仮に届いた場合、それは我々ではなく闇の業者の仕業です。すぐに神棚に報告してください。。
+        </p>
+
+        <h3>3. 安全管理について</h3>
+        <p>
+             個人情報は厳重に管理され、不正アクセス・漏洩・改ざんなどのリスクに対して適切な対策を講じます。
+            当団体のサーバーは、カリオストロ城のクラリスが監禁されてた塔ばりの堅牢性を誇ります（…たぶん）。
+        </p>
+
+        <h3>4. 第三者提供について</h3>
+        <p>
+            法令に基づく場合を除き、本人の同意なく第三者に提供することは一切ありません。
+            <br>情報の流出は「友達以上恋人未満の距離感にあるグループLINE」上だけで十分です。
+            <br>それ以外に漏れたら、友情も恋も崩壊しかねません。
+        </p>
+
+        <h3>5. 法令遵守と見直し</h3>
+        <p>
+            当団体は、個人情報保護に関する法令・ガイドラインを、「え？こんなとこまで守るの？」というレベルで律儀に遵守しております。
+            <br>さらに、もし法改正や技術の進化、もしくは宇宙からの電波により「もっとこうすべきでは？」という神託が下った場合には、即座に本ポリシーの見直しとアップデートを行います。
+            <br>改悪はしません。改善しかしません。
+            <br>むしろ、気づけば「それもう憲法レベルじゃない？」とささやかれるほどの透明性を目指して、我々は日々、自問自答しております。
+        </p>
+
+     <p>以上</p>
+    </section>
+  </main>
+
+
+  <!-- フッター（index.htmlと同じもの） -->
+  <footer>
+    <ul class="footer-links">
+      <li><a href="privacy.html">個人情報保護方針</a></li>
+      <li><a href="terms.html">ご利用規約</a></li>
+      <li><a href="company.html">会社概要</a></li>
+    </ul>
+
+    <small>© 2025 DEEB International. All Rights Reserved.</small>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+     const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+
+      toggle.addEventListener('click', () => {
+       nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      });
+    });
+  </script>
+
+  <script>
+   const toggle = document.querySelector('.menu-toggle');
+   const nav = document.querySelector('nav');
+
+   toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+   });
+  </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>生おむすび丸 - DEEB</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+        <div class="logo">
+            <a href="index.html#top">
+                <img src="DEEBlogo.png" alt="DEEBロゴ">
+            </a>
+        </div>
+
+        <div class="menu-toggle" id="hamburger">☰</div> 
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="fighters.html">FIGHTERS</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+  </header>
+
+  <main>
+    <section class="fighter-detail">
+
+      <!-- 大きな画像 -->
+      <img src="omusubi.png" alt="生おむすび丸">
+
+      <!-- ① 名前 -->
+      <h1>生おむすび丸(32)</h1>
+
+      <!-- ② リングネーム -->
+      <h2 class="ring-name">"天下無双のライスボール"</h2>
+
+      <!-- ③ 経歴 -->
+      <ul class="career">
+        <li>第5回納豆スライディング選手権王者</li>
+        <li>第7回味噌汁火傷我慢チャレンジ王者</li>
+        <li>全日本大便の重み選手権王者</li>
+      </ul>
+
+      <!-- ④ エピソード／詳細 -->
+      <div class="bio">
+        <p>
+          山形県出身。幼少期から「おにぎり＝主食＝武器」と教え込まれて育った異色の柔道家。
+          <br>5歳で味噌おにぎり6合分を完食し、保育園の給食記録を更新。「丸める力」と「握る力」に特化した独自の筋肉構造を持ち、大学では“人間炊飯器”の異名で話題に。握力は常人の5倍。塩むすびを両手で同時に握る「ダブルグリップ」は彼の代名詞だ。
+          
+          <br><br>フードイベント界でも異彩を放ち、第5回納豆スライディング選手権で粘り強さを武器に圧勝。
+          <br>第7回味噌汁大俵飲みチャレンジでは、1.5リットルの味噌汁を頭からかぶった後、誰よりも早く完食して会場の度肝を抜いた。
+          
+          <br><br>格闘技転向後はその圧倒的な“土台力”で、投げ技と重圧系の打撃を習得。
+          <br>特に、相手を抱えてから地面に押しつぶす「むすびクラッシュ」は、DEEB史上でも屈指の“重技”として恐れられている。食べ物に対する愛情はそのままリング上の情熱に変換され、「おにぎりを残すやつに負けるわけがねぇ」が彼の座右の銘。
+          
+          <br><br>休日は米農家の手伝いをしており、「自分で育てたコメで勝つのが一番うまい」と語る。
+          <br>リングでも私生活でも、“食”と“力”をむすび続ける侍、それが生おむすび丸だ。
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+
+    <ul class="footer-links">
+      <li><a href="privacy.html">個人情報保護方針</a></li>
+      <li><a href="terms.html">ご利用規約</a></li>
+      <li><a href="company.html">会社概要</a></li>
+    </ul>
+
+    <small>© 2025 DEEB International. All Rights Reserved.</small>
+    
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+     const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+
+      toggle.addEventListener('click', () => {
+       nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      });
+    });
+  </script>
+
+  <script>
+   const toggle = document.querySelector('.menu-toggle');
+   const nav = document.querySelector('nav');
+
+   toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+   });
+  </script>
+
+
+</body>
+</html>
